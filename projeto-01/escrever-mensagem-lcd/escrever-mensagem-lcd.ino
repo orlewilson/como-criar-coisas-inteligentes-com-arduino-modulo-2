@@ -23,9 +23,8 @@ LiquidCrystal lcd(2,3,4,5,6,7);
 // Configuração
 void setup()
 {
+  // Configura velocidade da portal serial/bluetooth
   Serial.begin(9600);
-
-  pinMode(13, OUTPUT);
 
   //Inicializa display de 2 linhas x 16 colunas
   lcd.begin(16,2);            
