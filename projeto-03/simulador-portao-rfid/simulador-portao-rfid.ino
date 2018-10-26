@@ -2,7 +2,7 @@
   Como Criar Coisas Inteligentes com Arduino - Módulo 2
   Facilitador:       Prof. Orlewilson Bentes Maia
   Data Criacao:      18/07/2018
-  Data Atualizao:    20/07/2018
+  Atualizacao:       20/07/2018
   Descricao:         Simular portão de entrada após identificação RFID
 */
 
