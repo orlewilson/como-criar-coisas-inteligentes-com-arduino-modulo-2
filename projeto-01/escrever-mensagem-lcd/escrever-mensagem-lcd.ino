@@ -2,7 +2,7 @@
   Como Criar Coisas Inteligentes com Arduino - Módulo 2
   Facilitador:       Prof. Orlewilson Bentes Maia
   Data Criacao:      18/07/2018
-  Data Atualizao:    20/07/2018
+  Data Atualizacao:  20/07/2018
   Descricao:         Enviar mensagem para Serial/LCD usando Bluetooth
 */
 

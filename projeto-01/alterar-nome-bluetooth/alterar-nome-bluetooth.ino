@@ -2,7 +2,7 @@
   Como Criar Coisas Inteligentes com Arduino - Módulo 2
   Facilitador:       Prof. Orlewilson Bentes Maia
   Data Criacao:      18/10/2018
-  Data Atualizacao:  20/10/2018
+  Atualizacao:       20/10/2018
   Descricao:         Mudar nome do bluetooth
   Fonte:             https://github.com/rwaldron/johnny-five/wiki/Getting-Started-with-Johnny-Five-and-HC-05-Bluetooth-Serial-Port-Module
 */
