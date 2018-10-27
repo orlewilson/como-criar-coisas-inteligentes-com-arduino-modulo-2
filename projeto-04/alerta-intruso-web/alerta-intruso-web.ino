@@ -24,6 +24,8 @@ Arduino Uno/Mega    NodeMCU
 
 //Biblioteca do sensor ultrassônico
 #include <Ultrasonic.h>
+
+//Biblioteca do WiFi e Servidor Web
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
@@ -65,17 +67,19 @@ void setup(void){
     Serial.print(".");
   }
  
-  Serial.println("");
-  Serial.print("Connected to ");
+ Serial.println("");
+  Serial.print("Conectado a ");
   Serial.println(ssid);
-  Serial.print("IP address: ");
+  Serial.print("Endereco IP: ");
   Serial.println(WiFi.localIP());
   
+  // salva dados no arquivo data.txt 
   server.on("/data.txt", [](){
     text = (String)data;
     server.send(200, "text/html", text);
   });
-  
+
+  // mostra pagina web ao usuario
   server.on("/", [](){
     page = "<h1>Como Criar Coisas Inteligentes com Arduino - Modulo 2 (Conectividade)</h1>";
     page += "<h1>Dados ultrassonico:</h1> <h1 id=\"data\">""</h1>\r\n";
@@ -101,12 +105,14 @@ void setup(void){
   });
  
   server.begin();
-  Serial.println("Web server started!");
+  Serial.println("Servidor Web iniciado!");
 }
  
 void loop(void){
   // ultrassom.Ranging(CM) retorna a distancia em centímetros(CM) ou polegadas(INC)
   data = ultrassom.Ranging(CM);
   delay(100);
+
+  // aguarda requisicao do cliente
   server.handleClient();
 }
