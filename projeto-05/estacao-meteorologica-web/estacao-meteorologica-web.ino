@@ -3,7 +3,7 @@
   Facilitador:       Prof. Orlewilson Bentes Maia
   Data Criacao:      26/07/2018
   Data Atualizacao:  26/07/2018
-  Descricao:         Enviar alerta de intruso por WiFi usando ultrassônico
+  Descricao:         Disponibilizar informações de uma mini estação meteorológica usando WiFi
   Fonte:             https://www.teachmemicro.com/nodemcu-ajax-dynamic-sensor-data-web-page/
                      https://roboindia.com/tutorials/DHT11-NodeMCU-arduino
 */
@@ -31,7 +31,7 @@ Arduino Uno/Mega    NodeMCU
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
-//---------- Ultrassônico
+//---------- DHT11
 // Porta na qual lerá os valores do sensor DHT
 const int DHT_PIN = 0; //D3
 
